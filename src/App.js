@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Sidebar from "./components/sidebar";
+import Sidebar from "./components/Sidebar/sidebar";
 import Main from "./components/main";
 import Data from "./data";
 
-const CLIENT_ID = "fcd5e78886aa46c7ad8c9f179bd2a90f";
+const CLIENT_ID = "9d32b1a8ceff431c9ebe17297f19f370";
 const CLIENT_SECRET = "50fe3290887246deaf6c6457a582f0f5";
-const REDIRECT_URI = "https://skaichima.github.io/beemusic/";
+const REDIRECT_URI = "http://localhost:3000/";
 const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
 const RESPONSE_TYPE = "token";
 

@@ -34,21 +34,21 @@ main{
   justify-content: space-between;
 }
 
-.logo{
+/* .logo{
   font-size: 1.5rem;
   width: 100%;
   text-align: center;
-}
+} */
 
-.logo > span{
+/* .logo > span{
   font-size: 1.5rem;
   color: #f9bb57;
-}
+} */
 
 .nav--links{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: 100%;
 }
 
@@ -477,6 +477,60 @@ audio::-webkit-media-controls-panel{
 .bar-text span{
   font-size: 0.6rem;
 }
+
+/* start */
+.main-card{
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+
+  .logo{text-align:center;
+      margin: 3px ;
+
+  } 
+  .logo img{width:120px;
+      block-size: auto;
+      max-inline-size: 80%;
+      gap: 1rem;
+      padding-right:6rem;           
+
+  }
+  ul{
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding: 0rem 0rem 0rem 0rem;
+      margin: 0;
+  
+  }
+  li{
+      display: flex;
+      gap: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease-in-out ;
+      background-color: #FFFDD0;
+      max-height: 3rem;
+      padding: 0px 10px;
+      border-radius: 10px;
+
+
+  }
+  li:hover{
+      color: white;
+  }
+  .tits{
+      padding-top: 1.2rem;
+  }
+  .title{
+      margin: 0;
+      padding: 0;
+      text-align: left;
+  }
+
+  /* end */
 
 @keyframes rotate {
   from {

@@ -1,15 +1,18 @@
 import React from "react";
 import { IoIosArrowForward, IoIosLogOut } from "react-icons/io";
 import { BsSpotify } from "react-icons/bs";
+import { MdHomeFilled, MdTrendingFlat, MdFeed } from "react-icons/md";
+import { MdEventNote, MdEditCalendar, MdNewspaper } from "react-icons/md";
+import  "./sidebar.css";
 
 function Sidebar({  accessToken, AUTH_ENDPOINT, RESPONSE_TYPE, REDIRECT_URI, CLIENT_ID, userData, logOut }) {
   return (
     <div className="sidebar">
-      <header>
-        <div className="logo">
-          <span>Bee</span>Music
-        </div>
-      </header>
+      
+      <div className="logo">
+                    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Black.png" alt="" />
+                </div>
+    
       <div className="nav--links">
         <div className="nav--group">
           <div className="nav-btns">
@@ -19,6 +22,51 @@ function Sidebar({  accessToken, AUTH_ENDPOINT, RESPONSE_TYPE, REDIRECT_URI, CLI
             </button>
           </div>
         </div>
+        
+        <div className="Container">
+            <div className="main-card">
+                
+                <ul>
+                    <li>
+                        <MdHomeFilled className='tits' /><p>Home</p>
+
+                    </li>
+                    <li>
+                        <MdTrendingFlat className='tits' /><p>Trend</p>
+
+                    </li>
+                    <li>
+                        <MdFeed className='tits' /><p>Feed</p>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div className="main-card">
+                <div className="logo">
+                <p className='title'>Discover</p>
+                </div>
+                <ul>
+                    <li>
+                        <MdEventNote className='tits' /><p>Home</p>
+
+                    </li>
+                    <li>
+                        <MdEditCalendar className='tits' /><p>Trend</p>
+
+                    </li>
+                    <li>
+                        <MdNewspaper className='tits' /><p>Feed</p>
+
+                    </li>
+                </ul>
+            </div>
+
+            {/* <Playlists/> */}
+
+        </div>
+        
+
         {accessToken ? (
           <div className="nav--group">
             <div className="nav-btns">
