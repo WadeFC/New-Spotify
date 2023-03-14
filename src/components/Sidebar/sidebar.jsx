@@ -10,7 +10,7 @@ function Sidebar({  accessToken, AUTH_ENDPOINT, RESPONSE_TYPE, REDIRECT_URI, CLI
     <div className="sidebar">
       
       <div className="logo">
-                    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Black.png" alt="" />
+                    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Black.png" alt="" width="120px"/>
                 </div>
     
       <div className="nav--links">
