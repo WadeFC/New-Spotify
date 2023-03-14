@@ -5,7 +5,7 @@ import Data from "./data";
 
 const CLIENT_ID = "9d32b1a8ceff431c9ebe17297f19f370";
 const CLIENT_SECRET = "50fe3290887246deaf6c6457a582f0f5";
-const REDIRECT_URI = "http://localhost:3000/";
+const REDIRECT_URI = process.env.REACT_APP_BASEURL;
 const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
 const RESPONSE_TYPE = "token";
 
